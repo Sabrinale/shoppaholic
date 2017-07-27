@@ -8,8 +8,8 @@ export default class Shop extends Component {
         return (
             <View style={{ flex: 1, backgroundColor: 'yellow' }}>
                 
-                
-
+               <Home /> 
+               
             </View>
 
         );

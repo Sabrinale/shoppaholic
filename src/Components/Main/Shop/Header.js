@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Dimensions } from 'react-native';
-import { withNavigation } from 'react-navigation';
+
 
 const{ height } = Dimensions.get('window');
 export default class Header extends Component {

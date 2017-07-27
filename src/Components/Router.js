@@ -8,9 +8,10 @@ import OrderHistory from './OrderHistory/OrderHistory';
 import Shop from './Main/Shop/Shop';
 import Menu from'./Main/Menu'
 import Home from './Main/Shop/Home/Home';
-import Cart from './Main/Shop/Cart/Cart'
-import Contact from './Main/Shop/Contact/Contact'
-import Search from './Main/Shop/Search/Search'
+import Cart from './Main/Shop/Cart/Cart';
+import Contact from './Main/Shop/Contact/Contact';
+import Search from './Main/Shop/Search/Search';
+import Header from './Main/Shop/Header'
 
 export const MainStack = StackNavigator({
         Screen_Authentication: {
@@ -32,14 +33,7 @@ export const MainStack = StackNavigator({
             }
         },
   });
-export const MenuStack = StackNavigator({
-  Screen_Menu: {
-    screen: Menu,
-    navigationOptions: {
-      title: 'Menu Page'
-    }
-  },
-});
+
 export const CartStack = StackNavigator({
   Screen_Cart: {
     screen: Cart,
@@ -77,12 +71,6 @@ export const Tabs = TabNavigator({
     screen: HomeStack,
     navigationOptions: {
         tabBarLabel: 'HOME'
-    }
-  },
-  Menu: {
-    screen: MenuStack,
-    navigationOptions: {
-        tabBarLabel: 'Menu'
     }
   },
   Cart: {
