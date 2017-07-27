@@ -13,12 +13,6 @@ import Contact from './Main/Shop/Contact/Contact'
 import Search from './Main/Shop/Search/Search'
 
 export const MainStack = StackNavigator({
-        Screen_Main: {
-            screen: Main,
-            navigationOptions: {
-              title: 'Main Page'
-            }
-        },  
         Screen_Authentication: {
             screen: Authentication,
             navigationOptions: {
@@ -38,6 +32,14 @@ export const MainStack = StackNavigator({
             }
         },
   });
+export const MenuStack = StackNavigator({
+  Screen_Menu: {
+    screen: Menu,
+    navigationOptions: {
+      title: 'Menu Page'
+    }
+  },
+});
 export const CartStack = StackNavigator({
   Screen_Cart: {
     screen: Cart,
@@ -75,6 +77,12 @@ export const Tabs = TabNavigator({
     screen: HomeStack,
     navigationOptions: {
         tabBarLabel: 'HOME'
+    }
+  },
+  Menu: {
+    screen: MenuStack,
+    navigationOptions: {
+        tabBarLabel: 'Menu'
     }
   },
   Cart: {
