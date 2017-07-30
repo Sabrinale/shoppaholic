@@ -9,10 +9,7 @@ export default class Home extends Component {
         return (
             <View style={{ flex: 1, backgroundColor: 'pink' }}>
                 <Text>Home Component</Text>
-                <Header />
-                
-              
-
+                <Header {...this.props} />
             </View>
 
         );

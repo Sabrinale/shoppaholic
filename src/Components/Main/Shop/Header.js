@@ -8,8 +8,8 @@ export default class Header extends Component {
     render() {
         return (
             
-                <View>
-                    <Text>Top Bar</Text>
+                <View style ={{ height: height /8 }}>
+                    <Text >Top Bar</Text>
                     <TouchableOpacity
                         style={{ backgroundColor: 'red' }}
                         onPress={() => { this.props.navigation.navigate('DrawerOpen'); }}

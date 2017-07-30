@@ -33,7 +33,6 @@ export const MainStack = StackNavigator({
             }
         },
   });
-
 export const CartStack = StackNavigator({
   Screen_Cart: {
     screen: Cart,

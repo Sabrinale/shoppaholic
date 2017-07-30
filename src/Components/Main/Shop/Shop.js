@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { Tabs, SideMenu } from '../../Router';
+import { MainStack, Tabs, SideMenu } from '../../Router';
 import Header from './Header'
 
 export default class Shop extends Component {
